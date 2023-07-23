@@ -2,38 +2,110 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- font size -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap"
-        rel="stylesheet">
-    <!-- daisy ui link -->
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.3.1/dist/full.css" rel="stylesheet" type="text/css" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <!-- tailwind custom color -->
-    <script>
-        tailwind.config = {
-          theme: {
-            extend: {
-              colors: {
-                clifford: '#da373d',
-              }
-            }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- font size -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+  <!-- font-awesome cdn link-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- daisy ui link -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@3.3.1/dist/full.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- tailwind custom color -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
           }
         }
-      </script>
-   <style>
-        .font {
-            font-family: 'Manrope', sans-serif;
-        }
-    </style>
-    <title>Tea House Website</title>
+      }
+    }
+  </script>
+  <style>
+    .font {
+      font-family: 'Manrope', sans-serif;
+    }
+  </style>
+  <title>Tea House Website</title>
 </head>
 
 <body>
+  <header class="container mx-auto p-10">
+    <div class="hero">
+      <div class="hero-content flex-col lg:flex-row-reverse">
+        <div>
+          <img src="images/banner.png" class="max-w-sm" />
+          <div class="flex gap-2 items-center drop-shadow-lg bg-white w-64 p-3 -mt-20 -mr-44">
+            <i class="fa-solid fa-star text-5xl text-amber-400"></i>
+            <div>
+              <h3 class="text-2xl">5.00</h3>
+              <p text-1xl>Trust Pilot Ratings</p>
+            </div>
+          </div>
+        </div>
+        <div>
+          <h1 class="text-7xl font-bold">It's good <br> tea time at The <br> Tea House</h1>
+          <p class="py-6 text-xl">Tea and Botanical Solutions Supplier Give Optimum Satisfaction To Your Taste Buds.</p>
+          <button class="btn btn-primary">Explore More<i class="fa-solid fa-arrow-right-long"></i></button>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main class="container mx-auto">
+    <section class="text-center my-24">
+      <h2 class="text-5xl mb-5">Our Featured Products</h2>
+      <p class="lg:max-w-3xl mx-auto mb-20">
+        There are many variations of passages of Lorem Ipsum available,
+        but the majority have suffered alteration in some form, by injected humour,
+        or randomised words which don't look even slightly believable.
+      </p>
+      <!-- card -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-24 ">
+        <!-- card one -->
+        <div class="card card-compact bg-gradient-to-r from-[#F4F4F4] to-[#F4F4F4] shadow-xl p-8">
+          <figure><img src="images/tea-1.png" alt="tea" /></figure>
+          <div class="card-body">
+            <h2 class="text-center text-3xl">Milk Tea</h2>
+            <p>Creamer could be replaced by fresh milk</p>
+          </div>
+        </div>
+        <!-- card two -->
+        <div class="card card-compact bg-gradient-to-r from-[#F4F4F4] to-[#F4F4F4] shadow-xl p-8">
+          <figure><img src="images/tea-2.png" alt="tea" /></figure>
+          <div class="card-body">
+            <h2 class="text-center text-3xl">Rose Tea</h2>
+            <p>Creamer could be replaced by fresh milk</p>
+          </div>
+        </div>
+        <!-- card three -->
+        <div class="card card-compact bg-gradient-to-r from-[#F4F4F4] to-[#F4F4F4] shadow-xl p-8">
+          <figure><img src="images/tea-3.png" alt="tea" /></figure>
+          <div class="card-body">
+            <h2 class="text-center text-3xl">Chocolate Tea</h2>
+            <p>Creamer could be replaced by fresh milk</p>
+          </div>
+        </div>
+        <!-- card four -->
+        <div class="card card-compact bg-gradient-to-r from-[#F4F4F4] to-[#F4F4F4] shadow-xl p-8">
+          <figure><img src="images/tea-4.png" alt="tea" /></figure>
+          <div class="card-body">
+            <h2 class="text-center text-3xl">Green Tea</h2>
+            <p>Creamer could be replaced by fresh milk</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
 
+  <!-- font awesome js file -->
+  <script src="https://kit.fontawesome.com/d171d57a0b.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
